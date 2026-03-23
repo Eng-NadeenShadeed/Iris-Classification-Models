@@ -52,15 +52,15 @@ The models used:
 ## Confusion Matrices
 
 ### KNN
-![KNN](images/KNN_cm.png)
+![KNN](images/KNN.png)
 
 ### SVM
-![SVM](images/SVM_cm.png)
+![SVM](images/SVM.png)
 
 ### Logistic Regression
-![Logistic](images/Logistic_Regression_cm.png)
+![Logistic Regression](images/Logistic Regression.png)
 
 ### Decision Tree
-![Tree](images/Decision_Tree_cm.png)
+![Decision Tree](images/Decision Tree.png)
 
 ---
