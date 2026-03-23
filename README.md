@@ -1,19 +1,13 @@
 # Iris Classification Models
 
 ## Overview
-This project applies multiple classification models to the Iris dataset and compares their performance using:
-- Accuracy
-- Macro Precision
-- Macro Recall
-- Macro F1-score
-- Confusion matrices
+This project applies multiple machine learning classification models to the Iris dataset and compares their performance.
 
-It demonstrates:
-- Loading datasets directly from `sklearn.datasets`
-- Training and evaluating models: KNN, SVM, Logistic Regression, Decision Tree
-- Displaying confusion matrices visually
-- Creating a comparison table of metrics
-- Short analysis of model performance
+The models used:
+- K-Nearest Neighbors (KNN)
+- Support Vector Machine (SVM)
+- Logistic Regression
+- Decision Tree
 
 ---
 
@@ -22,26 +16,51 @@ It demonstrates:
   - Sepal length
   - Sepal width
   - Petal length
-  - Petal width
-- 3 classes: Setosa, Versicolor, Virginica
-- Loaded directly from `sklearn.datasets.load_iris()`, no CSV required.
+  - Petal width  
+- 3 classes:
+  - Setosa
+  - Versicolor
+  - Virginica  
+- Loaded directly using `sklearn.datasets.load_iris()`
 
 ---
 
 ## How It Works
-1. Load the Iris dataset  
-2. Explore dataset: shape, number of classes, class distribution  
-3. Split dataset into training and testing sets (stratified)  
-4. Train 4 models:
-   - K-Nearest Neighbors (KNN)
-   - Support Vector Machine (SVM)
-   - Logistic Regression
-   - Decision Tree
-5. Evaluate models:
-   - Accuracy
-   - Classification report (precision, recall, F1-score)
-   - Confusion matrix (displayed visually)  
-6. Generate comparison table with macro metrics and accuracy  
-7. Analysis of results
+1. Load and explore dataset  
+2. Split data into training and testing sets  
+3. Train multiple classification models  
+4. Evaluate models using:
+   - Accuracy  
+   - Precision, Recall, F1-score  
+   - Confusion Matrix  
+5. Compare model performance  
+
+---
+
+## Results
+
+- **KNN achieved 100% accuracy**
+- **SVM, Logistic Regression, and Decision Tree achieved ~96.7% accuracy**
+
+### Key Insights
+- Setosa is perfectly classified in all models  
+- Minor confusion occurs between Versicolor and Virginica  
+- KNN performed the best on this dataset  
+
+---
+
+## Confusion Matrices
+
+### KNN
+![KNN](images/KNN.png)
+
+### SVM
+![SVM](images/SVM.png)
+
+### Logistic Regression
+![Logistic](images/Logistic Regression.png)
+
+### Decision Tree
+![Tree](images/Decision Tree.png)
 
 ---
